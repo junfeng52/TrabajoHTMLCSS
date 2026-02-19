@@ -17,6 +17,7 @@
 </head>
 <body>
     <header id="header-principal">
+        <h1>IES El Caminas</h1>
         <nav id="navbar">
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
@@ -25,5 +26,48 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <form action="https://example.com/matricula" method="post">
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+        
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+            </fieldset>
+        
+            <fieldset>
+                <legend>Información Académica</legend>
+        
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option>1º ESO</option>
+                    <option>2º ESO</option>
+                    <option>1º Bachillerato</option>
+                </select>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Condiciones</legend>
+        
+                <input type="checkbox" id="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad</label>
+            </fieldset>
+        
+            <button type="submit">Enviar</button>
+        
+        </form>
+    </main>
+
+
+    <footer>
+
+    </footer>
 </body>
 </html>
