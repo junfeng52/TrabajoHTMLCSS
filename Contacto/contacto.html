@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IES El Caminas - Contacto</title>
 
-    <meta property="og:title" content=“Web del IES El Caminas”>
+    <meta property="og:title" content="Web del IES El Caminas">
     <meta property="og:description" content="">
     <meta property="og:image" content="icon.jpg">
     <meta property="og:url" content="">
@@ -15,6 +16,7 @@
 
     <link rel="stylesheet" href="../general.css">
 </head>
+
 <body>
     <header id="header-principal">
         <h1>IES El Caminas</h1>
@@ -27,41 +29,54 @@
         </nav>
     </header>
     <main>
-        <form action="https://example.com/matricula" method="post">
+        <form action="">
 
             <fieldset>
                 <legend>Datos Personales</legend>
-        
+
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
-        
+
+                <br>
+
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
-        
+
+                <br>
+
                 <label for="fecha">Fecha de nacimiento:</label>
                 <input type="date" id="fecha" name="fecha">
             </fieldset>
-        
+
             <fieldset>
                 <legend>Información Académica</legend>
-        
+
                 <label for="curso">Curso:</label>
                 <select id="curso" name="curso">
                     <option>1º ESO</option>
                     <option>2º ESO</option>
+                    <option>3º ESO</option>
+                    <option>4º ESO</option>
                     <option>1º Bachillerato</option>
+                    <option>2º Bachillerato</option>
+                    <option>1º FP Basica</option>
+                    <option>2º FP Basica</option>
+                    <option>1º FP Medio</option>
+                    <option>2º FP Medio</option>
+                    <option>1º FP Superior</option>
+                    <option>2º FP Superior</option>
                 </select>
             </fieldset>
-        
+
             <fieldset>
                 <legend>Condiciones</legend>
-        
-                <input type="checkbox" id="privacidad" required>
-                <label for="privacidad">Acepto la política de privacidad</label>
+
+                <input type="checkbox" id="eula" required>
+                <label for="eula">Acepto la política de privacidad</label>
             </fieldset>
-        
+
             <button type="submit">Enviar</button>
-        
+
         </form>
     </main>
 
@@ -70,4 +85,5 @@
 
     </footer>
 </body>
+
 </html>
